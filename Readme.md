@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Александрович Власенко](https://up.htmlacademy.ru/htmlcss/23/user/301483).
-* Наставник: [Андрей Горбач](https://htmlacademy.ru/profile/lemberg).
+* Наставник: [Андрей Горбач](https://htmlacademy.ru/profile/lemberg)
 
 
 ---

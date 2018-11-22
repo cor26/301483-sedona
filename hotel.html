@@ -22,9 +22,43 @@
    	<main class="main">
       <h1 class="visually-hidden">Выбор отеля в Седоне</h1>
 
-      <!-- Здесь будет "красный" блок!  -->  
+      <section class="filter">
+        <img class="filter-photo" src="img/hotels/background-photo.jpg" width="850" height="350" alt="Фото Каньона">
+        <h2 class="visually-hidden">Фильрт поиска отеля</h2>
+        <ul>
+          <li class="infrastructure-list">
+            <h3 class="infrastructure-page">Инфраструктура:</h3>
+            <p class="infrastructure-item">Бассейн</p>
+            <p class="infrastructure-item">Парковка</p>  
+            <p class="infrastructure-item">Wi-Fi</p>              
+          </li>
+          
+          <li class="type-house-list">
+            <h3 class="type-house-page">Тип жилья:</h3>
+            <p class="type-house-item">Гостиница</p>
+            <p class="type-house-item">Мотель</p>  
+            <p class="type-house-item">Аппартаменты</p>              
+          </li>
+        </ul>
+        <p>Стоимость в сутки(Р):</p>
+
+        <!-- от 0 до 3000-->
+
+        <button class="show-button" type="submit">Показать</button>
+
+        <div class="filter-hotels">   
+          <h3 class="result">Найдено:3</h3>
+          <p class="sorting-result">Сортировка</p>
+          <p class="sorting sorting-price">По цене</p>
+          <p class="sorting sorting-type">По типу</p>
+          <p class="sorting sorting-rating">По рейтингу</p>
+          <span class="sorting-arrows"></span>
+        </div>
+
+      </section>  
 
       <section class="searching-results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="hotels-list">
           <li class="hotel-item">
             <img src="img/hotels/amara-hotel.jpg" width="50" height="40" alt="Фото гостиницы Amara resort & spa">

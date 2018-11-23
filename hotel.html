@@ -8,10 +8,10 @@
   	<header class="main-header">
   		<nav class="main-navigation">
   			<ul class="site-navigation">
-  				<li><a href="info.html">Информация</a></li>
-  				<li><a href="photo.html">Фото и видео</a></li>
-  				<li><a href="map.html">Карта штата</a></li>
-  				<li><a>Гостиница</a></li>
+  				<li class="item-navigation"><a href="info.html">Информация</a></li>
+  				<li class="item-navigation"><a href="photo.html">Фото и видео</a></li>
+  				<li class="item-navigation"><a href="map.html">Карта штата</a></li>
+  				<li class="item-navigation"><a>Гостиница</a></li>
   			</ul>
   			<a href="index.html" class="main-header-logo" >
   				<img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта Седона">
@@ -23,21 +23,23 @@
       <h1 class="visually-hidden">Выбор отеля в Седоне</h1>
 
       <section class="filter">
-        <img class="filter-photo" src="img/hotels/background-photo.jpg" width="850" height="350" alt="Фото Каньона">
+
+        <!--ФОНОВОЕ ФОТО width="1200" height="217" alt="Фото Каньона">-->
+
         <h2 class="visually-hidden">Фильрт поиска отеля</h2>
-        <ul>
-          <li class="infrastructure-list">
-            <h3 class="infrastructure-page">Инфраструктура:</h3>
-            <p class="infrastructure-item">Бассейн</p>
-            <p class="infrastructure-item">Парковка</p>  
-            <p class="infrastructure-item">Wi-Fi</p>              
+        <ul class="filter-list">
+          <li class="filter-list">
+            <h3 class="filter-page">Инфраструктура:</h3>
+            <p class="filter-item">Бассейн</p>
+            <p class="filter-item">Парковка</p>  
+            <p class="filter-item">Wi-Fi</p>              
           </li>
           
-          <li class="type-house-list">
-            <h3 class="type-house-page">Тип жилья:</h3>
-            <p class="type-house-item">Гостиница</p>
-            <p class="type-house-item">Мотель</p>  
-            <p class="type-house-item">Аппартаменты</p>              
+          <li class="filter-list">
+            <h3 class="filter-page">Тип жилья:</h3>
+            <p class="filter-item">Гостиница</p>
+            <p class="filter-item">Мотель</p>  
+            <p class="filter-item">Аппартаменты</p>              
           </li>
         </ul>
         <p>Стоимость в сутки(Р):</p>
@@ -48,7 +50,7 @@
 
         <div class="filter-hotels">   
           <h3 class="result">Найдено:3</h3>
-          <p class="sorting-result">Сортировка</p>
+          <p class="sorting sorting-result">Сортировка</p>
           <p class="sorting sorting-price">По цене</p>
           <p class="sorting sorting-type">По типу</p>
           <p class="sorting sorting-rating">По рейтингу</p>
@@ -61,7 +63,7 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="hotels-list">
           <li class="hotel-item">
-            <img src="img/hotels/amara-hotel.jpg" width="50" height="40" alt="Фото гостиницы Amara resort & spa">
+            <img src="img/hotels/amara-hotel.jpg" width="135" height="90" alt="Фото гостиницы Amara resort & spa">
             <h3 class="name-hotel">Amara resort & spa</h3>
             <p class="type-hotel">Гостиница</p>
             <p class="value-hotel">От 4000 р.</p>
@@ -72,7 +74,7 @@
           </li>
 
           <li class="hotel-item">
-            <img src="img/hotels/desert-hotel.jpg" width="50" height="40" alt="Фото гостиницы Desert quail inn">
+            <img src="img/hotels/desert-hotel.jpg" idth="135" height="90" alt="Фото гостиницы Desert quail inn">
             <h3 class="name-hotel">Desert quail inn</h3>
             <p class="type-hotel">Мотель</p>
             <p class="value-hotel">От 3000 р.</p>
@@ -83,7 +85,7 @@
           </li>
 
           <li class="hotel-item">
-            <img src="img/hotels/villas-hotel.jpg" width="50" height="40" alt="Фото гостиницы Villas at poco diablo">
+            <img src="img/hotels/villas-hotel.jpg" idth="135" height="90" alt="Фото гостиницы Villas at poco diablo">
             <h3 class="name-hotel">Villas at poco diablo</h3>
             <p class="type-hotel">Апартаменты</p>
             <p class="value-hotel">От 2000 р.</p>

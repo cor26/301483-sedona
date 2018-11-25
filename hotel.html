@@ -30,21 +30,44 @@
         <ul class="filter-items">
           <li class="filter-list">
             <h3 class="filter-title">Инфраструктура:</h3>
-            <p class="filter-item">Бассейн</p>
-            <p class="filter-item">Парковка</p>  
-            <p class="filter-item">Wi-Fi</p>              
+            <form method="post" action="#">
+              <p class="filter-item">
+                <input type="checkbox" name="infrastructure" id="infrastructure" checked>
+                <label for="infrastructure">Бассейн</label>
+              </p>
+              <p class="filter-item">
+                <input type="checkbox" name="parking" id="parking"> 
+                <label for="parking">Парковка</label>
+              </p>  
+              <p class="filter-item">
+                <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
+                <label for="Wi-Fi">Wi-Fi</label>
+              </p> 
+            </form>             
           </li>
-          
+
           <li class="filter-list">
             <h3 class="filter-title">Тип жилья:</h3>
-            <p class="filter-item">Гостиница</p>
-            <p class="filter-item">Мотель</p>  
-            <p class="filter-item">Аппартаменты</p>              
+            <form method="post" action="#">
+              <p class="filter-item">
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </p>
+              <p class="filter-item">
+                <input type="checkbox" name="motel" id="motel" checked> 
+                <label for="motel">Мотель</label>
+              </p>  
+              <p class="filter-item">
+                <input type="checkbox" name="appartament" id="appartament" checked>
+                <label for="appartament">Аппартаменты</label>
+              </p> 
+            </form>              
           </li>
         </ul>
-        <p class="filter-price">Стоимость в сутки(Р):</p>
-
-        <!-- от 0 до 3000-->
+        <p class="filter-price">
+          <label for="price"> Стоимость в сутки(Р):</label>
+          <input type="text" name="price" id="price">
+        </p>
 
         <button class="show-button" type="submit">Показать</button>
 

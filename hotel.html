@@ -27,10 +27,10 @@
         <!--ФОНОВОЕ ФОТО width="1200" height="217" alt="Фото Каньона">-->
 
         <h2 class="visually-hidden">Фильрт поиска отеля</h2>
-        <ul class="filter-items">
-          <li class="filter-list">
-            <h3 class="filter-title">Инфраструктура:</h3>
-            <form method="post" action="#">
+        <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+          <ul class="filter-items">
+            <li class="filter-list">
+              <h3 class="filter-title">Инфраструктура:</h3>            
               <p class="filter-item">
                 <input type="checkbox" name="infrastructure" id="infrastructure" checked>
                 <label for="infrastructure">Бассейн</label>
@@ -42,34 +42,32 @@
               <p class="filter-item">
                 <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
                 <label for="Wi-Fi">Wi-Fi</label>
-              </p> 
-            </form>             
-          </li>
+              </p>                        
+              </li>
+              <li class="filter-list">
+                <h3 class="filter-title">Тип жилья:</h3>            
+                <p class="filter-item">
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </p>
+                <p class="filter-item">
+                  <input type="checkbox" name="motel" id="motel" checked> 
+                  <label for="motel">Мотель</label>
+                </p>  
+                <p class="filter-item">
+                  <input type="checkbox" name="appartament" id="appartament" checked>
+                  <label for="appartament">Аппартаменты</label>
+                </p> 
+                           
+            </li>
+          </ul>
+          <p class="filter-price">
+            <label for="price"> Стоимость в сутки(Р):</label>
+            <input type="text" name="price" id="price">
+          </p>
 
-          <li class="filter-list">
-            <h3 class="filter-title">Тип жилья:</h3>
-            <form method="post" action="#">
-              <p class="filter-item">
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </p>
-              <p class="filter-item">
-                <input type="checkbox" name="motel" id="motel" checked> 
-                <label for="motel">Мотель</label>
-              </p>  
-              <p class="filter-item">
-                <input type="checkbox" name="appartament" id="appartament" checked>
-                <label for="appartament">Аппартаменты</label>
-              </p> 
-            </form>              
-          </li>
-        </ul>
-        <p class="filter-price">
-          <label for="price"> Стоимость в сутки(Р):</label>
-          <input type="text" name="price" id="price">
-        </p>
-
-        <button class="show-button" type="submit">Показать</button>
+          <button class="show-button" type="submit">Показать</button>
+        </form>   
 
         <div class="filter-hotels">   
           <h3 class="result-title">Найдено:3</h3>
@@ -90,10 +88,10 @@
             <h3 class="hotel-title">Amara resort & spa</h3>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-value">От 4000 р.</p>
-            <a href="#" class="information-hotel">Подробнее</a>
-            <a href="#" class="booking-hotel">Забронировать</a>
-            <span class="rating-star"></span>
-            <p class="rating-hotel">Рейтинг:8,5</p>
+            <a href="#" class="hotel-information">Подробнее</a>
+            <a href="#" class="hotel-booking">Забронировать</a>
+            <span class="hotel-rating-star"></span>
+            <p class="hotel-rating-hotel">Рейтинг:8,5</p>
           </li>
 
           <li class="hotel-item">
@@ -101,10 +99,10 @@
             <h3 class="hotel-title">Desert quail inn</h3>
             <p class="hotel-type">Мотель</p>
             <p class="hotel-value">От 3000 р.</p>
-            <a href="#" class="information-hotel">Подробнее</a>
-            <a href="#" class="booking-hotel">Забронировать</a>
-            <span class="rating-star"></span>
-            <p class="rating-hotel">Рейтинг:8,9</p>
+            <a href="#" class="hotel-information">Подробнее</a>
+            <a href="#" class="hotel-booking">Забронировать</a>
+            <span class="hotel-rating-star"></span>
+            <p class="hotel-rating-hotel">Рейтинг:8,9</p>
           </li>
 
           <li class="hotel-item">
@@ -112,10 +110,10 @@
             <h3 class="hotel-title">Villas at poco diablo</h3>
             <p class="hotel-type">Апартаменты</p>
             <p class="hotel-value">От 2000 р.</p>
-            <a href="#" class="information-hotel">Подробнее</a>
-            <a href="#" class="booking-hotel">Забронировать</a>
-            <span class="rating-star"></span>
-            <p class="rating-hotel">Рейтинг:9,2</p>
+            <a href="#" class="hotel-information">Подробнее</a>
+            <a href="#" class="hotel-booking">Забронировать</a>
+            <span class="hotel-rating-star"></span>
+            <p class="hotel-rating-hotel">Рейтинг:9,2</p>
           </li>
 
         </ul>

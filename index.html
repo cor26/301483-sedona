@@ -103,35 +103,35 @@
 
    			<a href="#" class="choose-hotel-date">Поиск гостиницы в Седоне</a>
 
-        <form class="choose-hotel-form" action="#" method="post"> 
+        <form class="choose-hotel-form" action="https://echo.htmlacademy.ru" method="post"> 
      			<ul class="choose-hotel-list">
-     				<li class="choose-hotel-item">
-              <p>
+     				<li class="choose-hotel-item">      
+            <!--svg"Изображение календарика"-->      
                 <label for="arrival-date"> Дата заезда</label>
-                <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-              </p>
+                <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">            
             </li>
-     				<li class="choose-hotel-item">
-              <p>              
+     				<li class="choose-hotel-item">  
+            <!--svg"Изображение календарика"-->                        
                 <label for="departure-date"> Дата выезда</label>
-                <input id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
-              </p>
+                <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">              
             </li>
-     				<li class="choose-hotel-item">
-              <p> 
+     				<li class="choose-hotel-item">              
                 <label for="grown">Взрослые</label>
-                <input type="text" name="grown" id="grown" value="" placeholder="2">
+                <button type="button" class="minus">-</button>
+                <input type="text" name="grown" id="grown" placeholder="2">
+                <button type="button" class="plus">+</button>
                 <label for="children">Дети</label>
-                <input type="text" name="children" id="children" value="" placeholder="0">
-              </p>
+                <button type="button" class="minus">-</button>
+                <input type="text" name="children" id="children" placeholder="0">
+                <button type="button" class="plus">+</button>   
             </li>  
-     			</ul>
+     			</ul>        
+   			  <button class="button-search" type="submit">Найти</button>
         </form>
-   			<button class="button-search" type="submit">Найти</button>
    		</section>
 
       <div class="map">
-        <img class="map-photo" src="img/index/map.jpg" width="1200" height="475" alt="Фото карты" >
+        <img class="map-photo" src="img/index/map.jpg" width="1200" height="593" alt="Карта местоположения города Седона" >
       </div>
    		
    	</main>	

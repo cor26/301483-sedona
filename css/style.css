@@ -9,7 +9,10 @@ font-weight: 700;
 color: #000000;
 text-transform: uppercase;
 
-background-color: #ffffff 
+background-color: #ffffff;
+background-image: url("../img/index/main-photo.jpg");
+background-repeat: no-repeat;
+
 }
 
 a {
@@ -20,5 +23,35 @@ a {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
-	background-color: #ffffff 
+	background-color: #ffffff; /*стили навигации*/
+}
+
+.navigation-list,
+.presence-advantage-list,
+.advantage-beauty-list,
+.choose-hotel-list,
+.social-list {
+	list-style: none;	/*Удаляю стиль ссылок*/
+}
+
+.navigation-list a { 
+	color: #000000;
+}
+
+.navigation-list a:hover { /*наведение*/
+	color: #81b3d2;
+}
+
+.navigation-list a:active  { /*нажатие*/
+	color: #b2b2b2;
+}
+
+.navigation-item:nth-child(1),
+.navigation-item:nth-child(2) {
+	text-align: left;
+	margin-left: 20px;
+}
+.navigation-item:nth-child(3),
+.navigation-item:nth-child(4) {
+	text-align: right;
 }

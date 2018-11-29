@@ -45,13 +45,37 @@ a {
 .navigation-list a:active  { /*нажатие*/
 	color: #b2b2b2;
 }
-
-.navigation-item:nth-child(1),
-.navigation-item:nth-child(2) {
-	text-align: left;
-	margin-left: 20px;
+.advantage-section-text {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	text-align: center;
 }
-.navigation-item:nth-child(3),
-.navigation-item:nth-child(4) {
-	text-align: right;
+
+.advantage-section-desc {
+	font-size: 14px;
+	line-height: 26px;
+	color: #a0a0a0;
+	text-align: center;
+}
+
+.advantage-real-title {
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.advantage-real-text,
+.advantage-real-desc {
+	font-size: 14px;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.advantage-real-photo {
+	background-image: url(../img/index/real-photo.jpg);
+	background-repeat: no-repeat; 
+
 }

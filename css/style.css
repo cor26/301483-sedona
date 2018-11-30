@@ -164,7 +164,7 @@ a {
 	background-color: #766357;
 }
 
-.choose-hotel-date a:active  { /*нажатие*/
+.choose-hotel-date:active  { /*нажатие*/
 	color: #b2b2b2;            /*Почему-то не работает*/
 }
 

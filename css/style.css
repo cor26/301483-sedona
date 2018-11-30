@@ -57,6 +57,7 @@ a {
 	line-height: 26px;
 	color: #a0a0a0;
 	text-align: center;
+	font-weight: 400;
 }
 
 .advantage-real-title {
@@ -64,6 +65,7 @@ a {
 	line-height: 26px;
 	color: #ffffff;
 	text-align: center;
+
 }
 
 .advantage-real-text,
@@ -72,10 +74,91 @@ a {
 	line-height: 26px;
 	color: #ffffff;
 	text-align: center;
+	font-weight: 400;
 }
 
 .advantage-real-photo {
-	background-image: url(../img/index/real-photo.jpg);
+	background-image: url("../img/index/real-photo.jpg");
+	width:800px;
+	height:256px;
 	background-repeat: no-repeat; 
+}
 
+.presence-advantage-title {
+	font-style: 21px;
+	line-height: 26px;
+	color: #000000;
+	text-align: center; 
+}
+
+.presence-advantage-desc {
+	font-size: 14px;
+	line-height: 26px;
+	color: #a0a0a0;
+	text-align: center;
+	font-weight: 400;
+}
+
+.bridge-advantage-title {
+	font-style: 21px;
+	line-height: 26px;
+	color: #000000;
+	text-align: center; 
+}
+
+.bridge-advantage-text,
+.bridge-advantage-desc {
+	font-size: 14px;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 400;
+}
+
+.bridge-advantage-photo {
+	background-image: url("../img/index/bridge-photo.jpg");
+	width:800px;
+	height:256px;
+	background-repeat: no-repeat
+}
+
+.advantage-beauty-title {
+	font-style: 21px;
+	line-height: 26px;
+	color: #000000;
+	text-align: center; 
+}
+
+.advantage-beauty-text,
+.advantage-beauty-desc {
+	font-size: 14px;
+	line-height: 26px;
+	color: #a0a0a0;
+	text-align: center;
+	font-weight: 400;
+}
+
+.interested-text {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	text-align: center;
+}
+.interested-desc {
+	font-size: 14px;
+	line-height: 26px;
+	color: #a0a0a0;
+	text-align: center;
+	font-weight: 400;
+}
+
+.choose-hotel-date {
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.choose-hotel-date a:active {
+	color: #857871;             /*Почему-то не работает*/
 }

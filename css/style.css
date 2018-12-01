@@ -100,8 +100,8 @@ a {
 
 .advantage-real-photo {
 	background-image: url("../img/index/real-photo.jpg");
-	width:800px;
-	height:256px;
+	width: 800px;
+	height: 256px;
 	background-repeat: no-repeat; 
 }
 
@@ -114,7 +114,7 @@ a {
 }    
 
 .presence-advantage-title {
-	font-style: 21px;
+	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 	text-align: center; 
@@ -130,7 +130,7 @@ a {
 }
 
 .bridge-advantage-title {  
-	font-style: 21px;
+	font-size: 21px;
 	line-height: 21px;
 	color: #ffffff;
 	text-align: center; 
@@ -163,7 +163,7 @@ a {
 }
 
 .advantage-beauty-title {
-	font-style: 21px;
+	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 	text-align: center; 

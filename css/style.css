@@ -2,9 +2,18 @@ html {
 	box-sizing: border-box;
 }
 
+*::before,
+*::after {
+	box-sizing: inherit; 
+}
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+a {
+	text-decoration: none;
 }
 
 body {
@@ -17,15 +26,12 @@ body {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+	box-sizing: border-box;
 }
 
 .main-page {
 	background-image: url("../img/index/main-photo.jpg");
 	background-repeat: no-repeat;
-}
-
-a {
-	text-decoration: none;
 }
 
 .main-navigation {
@@ -48,7 +54,7 @@ a {
 }
 
 .navigation-list a:active  { /*нажатие*/
-	color: rgba(0, 0, 0, 0.302);
+	color: rgba(0, 0, 0, 0.3);
  }
 
 .advantage-beauty-list {
@@ -217,7 +223,7 @@ a {
 }
 
 .choose-hotel-date:active  { 
-	color: rgba(255, 255, 255, 0.302);  
+	color: rgba(255, 255, 255, 0.3);  
 	background-color: #503e33;          
 }
 
@@ -257,15 +263,15 @@ a {
 
 .button-search:hover {
 	font-size: 21px;
-	line-height: auto;
+	line-height: normal;
 	color: #ffffff;
 	background-color:#669ec0;
 }
 
 .button-search:active {
 	font-size: 21px;
-	line-height: auto;
-	color: rgba(255, 255, 255, 0.302);
+	line-height: normal;
+	color: rgba(255, 255, 255, 0.3);
 	background-color:#5496bd;
 }
 
@@ -290,14 +296,14 @@ a {
 
 /*      ВТОРОЙ ЛИСТ       */
 
-.navigation-active {
+.navigation-active a{
 	color: #766357;
 }
-.navigation-active:focus {
+.navigation-active a:focus {
 	color: #766357;
 }
 
-.navigation-active:hover {
+.navigation-active a:hover {
 	color: #766357;         /*Почему-то стили в силе старые*/
 }
 
@@ -317,6 +323,7 @@ background-repeat: no-repeat;
 }
 
 .sorting {
+
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -326,7 +333,7 @@ background-repeat: no-repeat;
 }
 
 .sorting-price {
-	color: rgba(0, 0, 0, 0.302);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-price:hover {
@@ -338,7 +345,7 @@ background-repeat: no-repeat;
 }
 
 .sorting-type {
-	color: rgba(0, 0, 0, 0.302); 
+	color: rgba(0, 0, 0, 0.3); 
 }
 
 .sorting-type:hover {
@@ -350,7 +357,7 @@ background-repeat: no-repeat;
 }
 
 .sorting-rating {
-	color: rgba(0, 0, 0, 0.302); 
+	color: rgba(0, 0, 0, 0.3); 
 }
 
 .sorting-rating:hover {
@@ -395,7 +402,7 @@ background-repeat: no-repeat;
 }
 
 .hotel-link:active {
-	color:  rgba(0, 0, 0, 0.302);
+	color:  rgba(0, 0, 0, 0.3);
 }
 
 .hotel-information {
@@ -406,6 +413,7 @@ background-repeat: no-repeat;
 	background-color: #669ec0;
 }
 .hotel-information:active {
+	color:  rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
 }
 
@@ -419,6 +427,7 @@ background-repeat: no-repeat;
 
 .hotel-booking:active {
 	background-color: #503e33;
+	color:  rgba(255, 255, 255, 0.3);
 }
 
 .hotel-rating-hotel {

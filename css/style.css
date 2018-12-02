@@ -101,10 +101,10 @@ body {
 	background-color: #81b3d2;
 }
 
-.advantage-real-photo {
-	background-image: url("../img/index/real-photo.jpg");
+.advantage-real-photo {	
 	width: 800px;
 	height: 256px;
+	background-image: url("../img/index/real-photo.jpg");
 	background-repeat: no-repeat; 
 }
 

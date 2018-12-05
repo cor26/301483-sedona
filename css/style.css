@@ -434,3 +434,31 @@ background-repeat: no-repeat;
 	color: #666666;
 	background-color: #f2f2f2;
 }
+
+
+/*  ФЛЕКСЫ     */
+
+.navigation-list {
+	display: flex;
+	justify-content:space-around;
+	
+}
+.main-navigation {
+	position: relative;
+}
+
+.main-header-logo {
+	position: absolute;
+	top: 0;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 1200px;	
+	padding: 0 40px;
+}

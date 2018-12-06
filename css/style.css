@@ -24,11 +24,13 @@ body {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+
 }
 
 .main-page {
 	background-image: url("../img/index/main-photo.jpg");
 	background-repeat: no-repeat;
+	background-position: 50% 0;	
 }
 
 .main-navigation {
@@ -440,7 +442,12 @@ background-repeat: no-repeat;
 
 .navigation-list {
 	display: flex;
+	height: 55px;
+	align-items: center;
+	padding: 0;
+	margin: 0;	
 	justify-content:space-around;
+
 	
 }
 .main-navigation {
@@ -460,5 +467,37 @@ body {
 
 .container {
 	width: 1200px;	
-	padding: 0 40px;
+	margin: 0 auto;
+}
+
+.advantage-section-text {
+	width: 440px;
+	margin-top:570px;
+}
+
+.visually-hidden {
+	margin: 0;
+}
+
+.advantage-section {
+	display: inline-block;
+	position: relative;
+	margin:0 35%; /* ВИЗУАЛЬНО ЦЕНТР но ????*/
+
+}
+
+.advantage-section-desc {
+	width: 490px;
+	
+}
+
+.advantage-real {
+	display: flex;
+}
+
+.intro-welcome-text {
+	position: absolute;
+	top: 135px;
+	left:50%;
+	transform: translateX(-50%);
 }

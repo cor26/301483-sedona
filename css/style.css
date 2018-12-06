@@ -31,6 +31,8 @@ body {
 	background-image: url("../img/index/main-photo.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 0;	
+	width: 1200px;	
+	margin: 0 auto;
 }
 
 .main-navigation {
@@ -470,34 +472,75 @@ body {
 	margin: 0 auto;
 }
 
-.advantage-section-text {
-	width: 440px;
-	margin-top:570px;
-}
-
-.visually-hidden {
-	margin: 0;
-}
-
-.advantage-section {
-	display: inline-block;
-	position: relative;
-	margin:0 35%; /* ВИЗУАЛЬНО ЦЕНТР но ????*/
-
-}
-
-.advantage-section-desc {
-	width: 490px;
-	
-}
-
-.advantage-real {
-	display: flex;
-}
-
 .intro-welcome-text {
 	position: absolute;
 	top: 135px;
 	left:50%;
 	transform: translateX(-50%);
 }
+
+.advantage-section-text {
+	width: 440px;
+	margin-top:570px;
+}
+
+.advantage-section {
+	display: inline-block;
+	position: relative;
+	margin:0 37%; /* ВИЗУАЛЬНО ЦЕНТР но ????*/
+
+}
+
+.advantage-section-text {
+	margin-bottom: 35px;
+
+}
+
+.advantage-section-desc {
+	width: 490px;	
+	margin-bottom: 60px;
+}
+
+.advantage-real {
+	display: flex;
+	margin-bottom: 60px;	
+}
+
+.advantage-real-box{
+	width: 400px;
+
+}
+
+.presence-advantage {
+	margin-bottom: 85px;
+}
+
+.presence-advantage-list {
+	display: flex;
+	justify-content:space-around;
+	
+}
+
+.presence-advantage-item {
+	width: 290px;
+}
+
+.bridge-advantage {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.advantage-beauty-list {
+	display: flex;
+	justify-content:space-around;
+	margin-bottom: 115px;
+}
+
+.advantage-beauty-item {
+	width: 270px;
+}
+
+.interested-text {
+	margin-bottom: 35px;
+}
+

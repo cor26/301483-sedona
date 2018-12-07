@@ -1,6 +1,8 @@
 html {
 	box-sizing: border-box;
-}
+	width: 1200px;	
+	margin: 0 auto;
+}	
 
 *,
 *::before,
@@ -24,15 +26,21 @@ body {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+	background-color: #f2f2f2;
 
 }
 
-.main-page {
+.promo {
 	background-image: url("../img/index/main-photo.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 0;	
 	width: 1200px;	
+	height: 773px;
 	margin: 0 auto;
+}
+
+.visually-hidden {
+	margin: 0;
 }
 
 .main-navigation {
@@ -444,7 +452,7 @@ background-repeat: no-repeat;
 
 .navigation-list {
 	display: flex;
-	height: 55px;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 0;
 	margin: 0;	
@@ -463,31 +471,20 @@ background-repeat: no-repeat;
 	transform: translateX(-50%);
 }
 
-body {
-	background-color: #f2f2f2;
-}
-
-.container {
-	width: 1200px;	
-	margin: 0 auto;
-}
-
 .intro-welcome-text {
-	position: absolute;
-	top: 135px;
-	left:50%;
-	transform: translateX(-50%);
+	margin: 60px auto;
+	width: 460px;
 }
 
 .advantage-section-text {
-	width: 440px;
-	margin-top:570px;
+	width: 440px;	
 }
 
-.advantage-section {
-	display: inline-block;
-	position: relative;
-	margin:0 37%; /* ВИЗУАЛЬНО ЦЕНТР но ????*/
+.advantage-section {	
+	margin:0 auto;
+	width: 500px;
+	text-align: center;
+
 
 }
 
@@ -503,6 +500,7 @@ body {
 
 .advantage-real {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 60px;	
 }
 
@@ -517,6 +515,7 @@ body {
 
 .presence-advantage-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content:space-around;
 	
 }
@@ -526,12 +525,13 @@ body {
 }
 
 .bridge-advantage {
-	display: flex;
+	display: flex;	
 	margin-bottom: 50px;
 }
 
 .advantage-beauty-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content:space-around;
 	margin-bottom: 115px;
 }

@@ -54,10 +54,10 @@ body {
 
 .promo {		
 	display: flex;
-  justify-content: center;
-  width: 100%;	
+	justify-content: center;
+	width: 100%;	
 	min-height: 508px;
-  background-image: url("../img/svg/intro-mask.svg"), url("../img/index/main-photo.jpg");
+ 	background-image: url("../img/svg/intro-mask.svg"), url("../img/index/main-photo.jpg");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left calc(100% + 3px), 50% 0;
 	background-size: 100% 60px, cover;
@@ -68,6 +68,13 @@ body {
 	line-height: 26px;
 	color: #000000;
 	background-color: #ffffff; /*стили навигации*/
+}
+
+.main-header-logo {
+	position: absolute;
+	top: 0;
+	left:50%;
+	transform: translateX(-50%);
 }
 
 .navigation-list {
@@ -106,6 +113,21 @@ body {
 .navigation-item a:active  { /*нажатие*/
 	color: rgba(0, 0, 0, 0.3);
  }
+
+.navigation-active a{
+	color: #766357;
+}
+.navigation-active a:focus {
+	color: #766357;
+}
+
+.navigation-active a:hover {
+	color: #766357;               /*Очень смешно, но не могу понять что это за классы. Скорее всего ранее этот класс ьыл удален*/
+}
+
+.intro-welcome-text {
+	margin-top: 75px;
+}
 
 .advantage-beauty-list {
 	list-style: none;
@@ -176,7 +198,6 @@ body {
 	text-align: center; 
 }
 
-
 .presence-advantage-desc {
 	font-size: 14px;
 	line-height: 21px;
@@ -218,7 +239,98 @@ body {
 	background-repeat: no-repeat
 }
 
+.advantage-section {	
+	margin:0 auto;
+	width: 500px;
+	text-align: center;
+}
+
+.advantage-section-text {
+	width: 440px;	
+}
+
+.advantage-section-text {
+	margin-bottom: 35px;
+
+}
+
+.advantage-section-desc {
+	width: 490px;	
+	margin-bottom: 60px;
+}
+
+.advantage-real {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 60px;	
+}
+
+.advantage-real-box{
+	width: 400px;
+    background-color: #81b3d2;
+}
+
+.advantage-real-title {
+	margin: 45px 50px 0px 50px;
+}
+
+.advantage-real-text {
+	margin: 25px 45px;
+}
+
+.advantage-real-desc {
+	margin: 0px 50px 0px 50px;
+}
+
+.presence-advantage {
+	margin-bottom: 85px;
+}
+
+.presence-advantage-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;	
+	background-color: #ffffff;
+}
+
+.presence-advantage-item {
+	width: 290px;
+}
+
+.bridge-advantage {
+	display: flex;	
+}
+.bridge-advantage-box {
+	width: 400px;
+    background-color: #81b3d2;
+}
+
+.bridge-advantage-title {
+	margin: 45px 50px 0px 50px;
+}
+
+.bridge-advantage-text {
+	margin: 25px 45px;
+}
+
+.bridge-advantage-desc {
+	margin: 0px 50px 0px 50px;
+}
+
+.advantage-beauty-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	margin: 0 auto;
+	background-color: #eeeeee;
+}
+
+.advantage-beauty-item {
+	width: 270px;
+}
+
 .advantage-beauty-title {
+	margin: 45px auto 25px auto;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
@@ -226,6 +338,7 @@ body {
 }
 
 .advantage-beauty-text {
+	margin-bottom: 25px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
@@ -234,6 +347,7 @@ body {
 }	
 
 .advantage-beauty-desc {
+	margin-bottom: 65px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
@@ -242,17 +356,41 @@ body {
 }
 
 .interested-text {
+	margin-bottom: 35px;
 	font-size: 21px;
 	line-height: 36px;
 	color: #000000;
 	text-align: center;
 }
 .interested-desc {
+	width: 445px;
+	margin: 0 auto 50px auto;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
 	text-align: center;
 	font-weight: 400;
+}
+
+.choose-hotel-box {
+	width: 575px;
+}
+
+.choose-hotel-date {
+	display: flex;
+    width: 575px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 30px;
+    text-align: center;
+}
+
+.academy-link {
+	margin-top: 40px;
+}
+
+.choose-hotel-item label {
+	margin-left:50px;
 }
 
 .choose-hotel-list {
@@ -353,28 +491,41 @@ body {
 
 
 
-
-
 /*      ВТОРОЙ ЛИСТ       */
 
-.navigation-active a{
-	color: #766357;
-}
-.navigation-active a:focus {
-	color: #766357;
-}
 
-.navigation-active a:hover {
-	color: #766357;         
-}
 
 .filter {
-background-image: url("../img/hotels/background-photo.jpg");
-background-repeat: no-repeat;
+	
+	background-image: url("../img/hotels/background-photo.jpg");
+	background-repeat: no-repeat;
+}
+
+.filter-items {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filter-list:nth-child(1){
+	margin: 30px 110px 25px 70px;	
+}
+
+.filter-list {
+	margin: 30px 0 25px 0;
+}
+
+.filter-price {
+	display: flex;
 }
 
 .filter-hotels {
 	background-color: #ffffff;
+}
+
+.filter-title {
+	margin: 0;
 }
 
 .result-title {
@@ -432,7 +583,6 @@ background-repeat: no-repeat;
 .hotels-list {
 	list-style-type: none;
 }
-
 
 .hotel-type {
 	font-size: 14px;
@@ -498,148 +648,3 @@ background-repeat: no-repeat;
 	color: #666666;
 	background-color: #f2f2f2;
 }
-
-
-/*  ФЛЕКСЫ     */
-
-
-.main-header-logo {
-	position: absolute;
-	top: 0;
-	left:50%;
-	transform: translateX(-50%);
-}
-
-.intro-welcome-text {
-	margin-top: 75px;
-}
-
-.advantage-section-text {
-	width: 440px;	
-}
-
-.advantage-section {	
-	margin:0 auto;
-	width: 500px;
-	text-align: center;
-}
-
-.advantage-section-text {
-	margin-bottom: 35px;
-
-}
-
-.advantage-section-desc {
-	width: 490px;	
-	margin-bottom: 60px;
-}
-
-.advantage-real {
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 60px;	
-}
-
-.advantage-real-box{
-	width: 400px;
-    background-color: #81b3d2;
-}
-
-.advantage-real-title {
-	margin: 45px 50px 0px 50px;
-}
-
-.advantage-real-text {
-	margin: 25px 45px;
-}
-
-.advantage-real-desc {
-	margin: 0px 50px 0px 50px;
-}
-
-.presence-advantage {
-	margin-bottom: 85px;
-}
-
-.presence-advantage-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-around;	
-	background-color: #ffffff;
-}
-
-.presence-advantage-item {
-	width: 290px;
-}
-
-.bridge-advantage-box {
-	width: 400px;
-    background-color: #81b3d2;
-}
-
-.bridge-advantage {
-	display: flex;	
-}
-
-.bridge-advantage-title {
-	margin: 45px 50px 0px 50px;
-}
-
-.bridge-advantage-text {
-	margin: 25px 45px;
-}
-
-.bridge-advantage-desc {
-	margin: 0px 50px 0px 50px;
-}
-
-.advantage-beauty-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-around;
-	margin: 0 auto;
-	background-color: #eeeeee;
-}
-
-.advantage-beauty-item {
-	width: 270px;
-}
-
-.advantage-beauty-title {
-	margin: 45px auto 25px auto;
-}
-
-.advantage-beauty-text {
-	margin-bottom: 25px;
-}
-
-.advantage-beauty-desc {
-	margin-bottom: 65px;
-}
-
-.interested-text {
-	margin-bottom: 35px;
-}
-
-.interested-desc {
-	width: 445px;
-	margin: 0 auto 50px auto;
-}
-
-.choose-hotel-box {
-	width: 575px;
-}
-
-.choose-hotel-date {
-	display: flex;
-    width: 575px;
-    margin: 0 auto;
-    padding: 30px;
-    text-align: center;
-}
-
-.academy-link {
-	background-color: red;
-	margin-top: 40px;
-}
-

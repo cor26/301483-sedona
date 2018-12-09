@@ -626,6 +626,10 @@ background-repeat: no-repeat;
 	margin: 0 auto 50px auto;
 }
 
+.choose-hotel-box {
+	width: 575px;
+}
+
 .choose-hotel-date {
 	display: flex;
     width: 575px;

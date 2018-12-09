@@ -326,6 +326,7 @@ body {
 }
 
 .footer-page {
+	display: flex;
 	background-color: #f9fbf6;
 }
 
@@ -333,11 +334,21 @@ body {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+	margin: 50px 250px 50px 130px;
 }
 
 .social-list {
+	display: flex;
 	list-style: none;
 	background-color: #81b3d2;
+	margin: 40px 230px auto 0px;
+	width: 150px;
+}
+
+.website-by {
+	font-size: 14px;
+	line-height: 26px;
+	margin: 50px 10px;
 }
 
 
@@ -531,7 +542,19 @@ background-repeat: no-repeat;
 
 .advantage-real-box{
 	width: 400px;
+    background-color: #81b3d2;
+}
 
+.advantage-real-title {
+	margin: 45px 50px 0px 50px;
+}
+
+.advantage-real-text {
+	margin: 25px 45px;
+}
+
+.advantage-real-desc {
+	margin: 0px 50px 0px 50px;
 }
 
 .presence-advantage {
@@ -541,31 +564,78 @@ background-repeat: no-repeat;
 .presence-advantage-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:space-around;
-	
+	justify-content:space-around;	
+	background-color: #ffffff;
 }
 
 .presence-advantage-item {
 	width: 290px;
 }
 
+.bridge-advantage-box {
+	width: 400px;
+    background-color: #81b3d2;
+}
+
 .bridge-advantage {
 	display: flex;	
-	margin-bottom: 50px;
+}
+
+.bridge-advantage-title {
+	margin: 45px 50px 0px 50px;
+}
+
+.bridge-advantage-text {
+	margin: 25px 45px;
+}
+
+.bridge-advantage-desc {
+	margin: 0px 50px 0px 50px;
 }
 
 .advantage-beauty-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
-	margin-bottom: 115px;
+	margin: 0 auto;
+	background-color: #eeeeee;
 }
 
 .advantage-beauty-item {
 	width: 270px;
 }
 
+.advantage-beauty-title {
+	margin: 45px auto 25px auto;
+}
+
+.advantage-beauty-text {
+	margin-bottom: 25px;
+}
+
+.advantage-beauty-desc {
+	margin-bottom: 65px;
+}
+
 .interested-text {
 	margin-bottom: 35px;
+}
+
+.interested-desc {
+	width: 445px;
+	margin: 0 auto 50px auto;
+}
+
+.choose-hotel-date {
+	display: flex;
+    width: 575px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.academy-link {
+	background-color: red;
+	margin-top: 40px;
 }
 

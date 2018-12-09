@@ -491,7 +491,11 @@ body {
 
 
 
+
+
 /*      ВТОРОЙ ЛИСТ       */
+
+
 
 
 
@@ -521,6 +525,7 @@ body {
 }
 
 .filter-hotels {
+	display: flex;
 	background-color: #ffffff;
 }
 
@@ -529,22 +534,26 @@ body {
 }
 
 .result-title {
+	margin: 30px 40px 30px 70px;
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
 }
 
 .sorting {
+	margin-top: 40px;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 }
 
 .sorting-result {
+	margin-right: 35px;
 	color: #000000;
 }
 
 .sorting-price {
+	margin-right: 30px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -557,6 +566,7 @@ body {
 }
 
 .sorting-type {
+	margin-right: 30px;
 	color: rgba(0, 0, 0, 0.3); 
 }
 

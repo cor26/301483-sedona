@@ -55,6 +55,7 @@ body {
 .promo {		
 	display: flex;
 	justify-content: center;
+	margin-bottom: 35px;
 	width: 100%;	
 	min-height: 508px;
  	background-image: url("../img/svg/intro-mask.svg"), url("../img/index/main-photo.jpg");
@@ -129,11 +130,15 @@ body {
 	margin-top: 75px;
 }
 
-.advantage-beauty-list {
-	list-style: none;
+.advantage-section {	
+	margin:0 auto;
+	width: 500px;
+	text-align: center;
 }
 
 .advantage-section-text {
+	margin: 0 auto 30px auto;
+	width: 440px;	
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
@@ -142,6 +147,9 @@ body {
 }
 
 .advantage-section-desc {
+	margin: 0;
+	padding-bottom: 60px;
+	width: 490px;	
 	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
@@ -150,7 +158,22 @@ body {
 	font-weight: 400;
 }
 
+.advantage-real {
+	margin: 0;
+	padding-bottom: 60px;
+	display: flex;
+	flex-wrap: wrap;
+		
+}
+
+.advantage-real-box{
+	width: 400px;
+    background-color: #81b3d2;
+}
+
 .advantage-real-title {
+	margin: 0;
+	padding: 45px 50px 20px 50px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #ffffff;
@@ -159,6 +182,8 @@ body {
 }
 
 .advantage-real-text {
+	margin: 0;
+	padding-bottom: 25px; 
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
@@ -168,6 +193,8 @@ body {
 }
 
 .advantage-real-desc {
+	margin: 0;
+	padding: 0px 50px 0px 50px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
@@ -184,14 +211,27 @@ body {
 }
 
 .presence-advantage {
+	margin: 0;
 	background-color: #eeeeee;
 }
 
 .presence-advantage-list {
+	margin: 0 auto;
+	padding-bottom: 85px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;	
 	list-style: none;
+	background-color: #ffffff;	
 }    
 
+.presence-advantage-item {
+	width: 290px;
+}
+
 .presence-advantage-title {
+	margin: 0;
+	padding-bottom: 20px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
@@ -199,6 +239,7 @@ body {
 }
 
 .presence-advantage-desc {
+	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
@@ -206,7 +247,17 @@ body {
 	font-weight: 400;
 }
 
-.bridge-advantage-title {  
+.bridge-advantage {
+	display: flex;	
+}
+.bridge-advantage-box {
+	width: 400px;
+    background-color: #81b3d2;
+}
+
+.bridge-advantage-title { 
+	margin: 0;
+	padding: 45px 50px 25px 50px; 
 	font-size: 21px;
 	line-height: 21px;
 	color: #ffffff;
@@ -215,6 +266,8 @@ body {
 } 
 
 .bridge-advantage-text {
+	margin: 0;
+	padding-bottom: 25px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
@@ -224,6 +277,8 @@ body {
 }
 
 .bridge-advantage-desc {
+	margin: 0;
+	padding: 0px 50px 0px 50px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
@@ -239,89 +294,12 @@ body {
 	background-repeat: no-repeat
 }
 
-.advantage-section {	
-	margin:0 auto;
-	width: 500px;
-	text-align: center;
-}
-
-.advantage-section-text {
-	width: 440px;	
-}
-
-.advantage-section-text {
-	margin-bottom: 35px;
-
-}
-
-.advantage-section-desc {
-	width: 490px;	
-	margin-bottom: 60px;
-}
-
-.advantage-real {
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 60px;	
-}
-
-.advantage-real-box{
-	width: 400px;
-    background-color: #81b3d2;
-}
-
-.advantage-real-title {
-	margin: 45px 50px 0px 50px;
-}
-
-.advantage-real-text {
-	margin: 25px 45px;
-}
-
-.advantage-real-desc {
-	margin: 0px 50px 0px 50px;
-}
-
-.presence-advantage {
-	margin-bottom: 85px;
-}
-
-.presence-advantage-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-around;	
-	background-color: #ffffff;
-}
-
-.presence-advantage-item {
-	width: 290px;
-}
-
-.bridge-advantage {
-	display: flex;	
-}
-.bridge-advantage-box {
-	width: 400px;
-    background-color: #81b3d2;
-}
-
-.bridge-advantage-title {
-	margin: 45px 50px 0px 50px;
-}
-
-.bridge-advantage-text {
-	margin: 25px 45px;
-}
-
-.bridge-advantage-desc {
-	margin: 0px 50px 0px 50px;
-}
-
 .advantage-beauty-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
 	margin: 0 auto;
+	list-style: none;
 	background-color: #eeeeee;
 }
 
@@ -518,6 +496,10 @@ body {
 
 .filter-list {
 	margin: 30px 0 25px 0;
+}
+
+.filter-list-price { /*sssssssssssssssssssssssssssssssssssssssssssssssssss*/
+
 }
 
 .filter-price {

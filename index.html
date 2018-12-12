@@ -122,16 +122,18 @@
                   <label for="departure-date"> Дата выезда:</label>
                   <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">              
               </li>
-       				<li class="choose-hotel-item">              
-                  <label for="grown">Взрослые</label>
-                  <button type="button" class="minus">-</button>
-                  <input type="text" name="grown" id="grown" placeholder="2">
-                  <button type="button" class="plus">+</button>
-                  <label for="children">Дети</label>
-                  <button type="button" class="minus">-</button>
-                  <input type="text" name="children" id="children" placeholder="0">
-                  <button type="button" class="plus">+</button>   
-              </li>  
+              <div class="choose-hotel-item-meta">
+         				<li class="choose-hotel-item">              
+                    <label for="grown">Взрослые</label>
+                    <button class="grown-minus" type="button">-</button>
+                    <input class="grown-form" type="text" name="grown" id="grown" placeholder="2">
+                    <button class="grown-plus" type="button">+</button>
+                    <label class="children" for="children">Дети</label>
+                    <button class="children-minus" type="button">-</button>
+                    <input class="children-form" type="text" name="children" id="children" placeholder="0">
+                    <button class="children-plus" type="button">+</button>   
+                </li>
+              </div>  
        			</ul>        
      			  <button class="button-search" type="submit">Найти</button>
           </form>
@@ -152,7 +154,7 @@
         </ul>
         <p class="website-by">website by</p>
         <a href="https://htmlacademy.ru/" class="academy-link">
-        	<img src="img/svg/logo-htmlacademy.svg" alt="Логотип html-academy" width="30" height="35">
+        	<img src="img/svg/logo-htmlacademy.svg" alt="Логотип html-academy" width="115px" height="auto">
    		</a>
    	</footer>
     </div>

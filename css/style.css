@@ -25,7 +25,6 @@ body {
 	color: #000000;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
-
 }
 
 .visually-hidden {
@@ -119,6 +118,7 @@ body {
 .navigation-active a{
 	color: #766357;
 }
+
 .navigation-active a:focus {
 	color: #766357;
 }
@@ -166,7 +166,7 @@ body {
 }
 
 .advantage-real-box{
-	padding: 45px 0 60px;
+	padding: 45px 55px 60px;
 	width: 400px;
   	background-color: #81b3d2;
 }
@@ -191,7 +191,7 @@ body {
 }
 
 .advantage-real-desc {
-	margin: 0px 50px 0px 50px;
+	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
@@ -246,9 +246,10 @@ body {
 .bridge-advantage {
 	display: flex;	
 }
+
 .bridge-advantage-box {
 	margin: 0 auto;
-	padding: 45px 0 60px;
+	padding: 45px 45px 60px;
 	width: 400px;
     background-color: #81b3d2;
 }
@@ -344,6 +345,7 @@ body {
 	color: #000000;
 	text-align: center;
 }
+
 .interested-desc {
 	width: 445px;
 	margin: 0 auto 50px auto;
@@ -479,11 +481,13 @@ body {
 	width: 458px;
 	padding: 18px 0;
 	font-size: 21px;
+	line-height: normal;
 	color: #ffffff;
 	background-color:#81b3d2;
 }
 
 .button-search:hover {
+	padding: 18px 0;
 	font-size: 21px;
 	line-height: normal;
 	color: #ffffff;
@@ -491,6 +495,7 @@ body {
 }
 
 .button-search:active {
+	padding: 18px 0;
 	font-size: 21px;
 	line-height: normal;
 	color: rgba(255, 255, 255, 0.3);
@@ -742,6 +747,7 @@ body {
 .hotel-information:hover {
 	background-color: #669ec0;
 }
+
 .hotel-information:active {
 	color:  rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;

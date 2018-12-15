@@ -545,9 +545,23 @@ body {
 
 .button-calendar {
   position: absolute;
+  left: 420px;
+  top: 10px;
+  fill: #d5d5d5;
   border: none;
+  background-color: #f2f2f2;
   width: 21px;
   height: 22px;
+}
+
+.button-calendar:hover path{
+  fill: #000000;
+  border: none;
+}
+
+.button-calendar:active path{
+  fill: #6da6e3;
+  border: none;
 }
 
 .button-search {
@@ -597,6 +611,8 @@ body {
 
 .social-list {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
   margin-right: 225px;
   padding: 0;

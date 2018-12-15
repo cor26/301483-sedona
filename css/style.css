@@ -611,20 +611,53 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   margin-right: 225px;
   padding: 0;
+  width: 152px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:48px;
+  height:48px;
   background-color: #81b3d2;
-  width: 150px;
+}
+
+.social-button:hover {
+  background-color: #6da6e3;
+}
+
+.social-button:active {
+  background-color: #3b6db8;
+}
+
+.social-button:active path{
+  fill: #7699cd;
 }
 
 .website-by {
-  margin-right: 10px;
-  padding: 0;
+  margin: 0 10px 0 0;
+  padding-top: 20px;
   font-size: 14px;
   line-height: 26px;
+}
+
+.academy-link {
+  padding-top: 15px;
+}
+
+.academy-link:hover path{
+  fill: #6da6e3;
+}
+
+.academy-link:active path{
+  fill: #b9b6b8;
 }
 
 /*      ВТОРОЙ ЛИСТ       */

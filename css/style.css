@@ -978,9 +978,10 @@ body {
   content: "";
   position: absolute;
   top: 30px;
-  right: 65px;
+  right: 75px;
   background-image: url("../img/svg/star.svg");
-  width: 18px;
+  background-repeat: repeat-x;
+  width: 70px;
   height: 17px;
 }
 
@@ -988,8 +989,20 @@ body {
   content: "";
   position: absolute;
   top: 30px;
-  right: 65px;
+  right: 75px;
   background-image: url("../img/svg/star.svg");
-  width: 18px;
+  background-repeat: repeat-x;
+  width: 55px;
+  height: 17px;
+}
+
+.hotel-rating-villas::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 75px;
+  background-image: url("../img/svg/star.svg");
+  background-repeat: repeat-x;
+  width: 35px;
   height: 17px;
 }

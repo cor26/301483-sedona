@@ -455,6 +455,7 @@ body {
   font-weight: bold;
   color: #000000;
   background-color: #f2f2f2;
+  border: none;
 }
 
 .choose-hotel-item input:hover {
@@ -469,18 +470,24 @@ body {
   background-color: #ffffff;
 }
 
+.choose-hotel-item input::placeholder {
+  font: inherit;
+  color: inherit;
+  opacity: 1;
+}
+
 .choose-hotel-item-meta .grown-minus {
   width: 40px;
   border: none;
   color: #a9a9a9;
 }
 
-.grown-minus:hover {
-  color: #000000;
+.grown-minus:hover line{
+  stroke: #000000;
 }
 
-.grown-minus:active {
-  color: #81b3d2;
+.grown-minus:active line{
+  stroke: #81b3d2;
 }
 
 .choose-hotel-item-meta .grown-form {
@@ -496,12 +503,12 @@ body {
   color: #a9a9a9;
 }
 
-.grown-plus:hover {
-  color: #000000;
+.grown-plus:hover line{
+  stroke: #000000;
 }
 
-.grown-plus:active {
-  color: #81b3d2;
+.grown-plus:active line{
+  stroke: #81b3d2;
 }
 
 .choose-hotel-item > .children {
@@ -515,12 +522,12 @@ body {
   color: #a9a9a9;
 }
 
-.children-minus:hover {
-  color: #000000;
+.children-minus:hover line{
+  stroke: #000000;
 }
 
-.children-minus:active {
-  color: #81b3d2;
+.children-minus:active line{
+  stroke: #81b3d2;
 }
 
 .choose-hotel-item-meta .children-form {
@@ -535,33 +542,40 @@ body {
   color: #a9a9a9;
 }
 
-.children-plus:hover {
-  color: #000000;
+.children-plus:hover line{
+  stroke: #000000;
 }
 
-.children-plus:active {
-  color: #81b3d2;
+.children-plus:active line{
+  stroke: #81b3d2;
 }
 
 .button-calendar {
   position: absolute;
-  left: 420px;
-  top: 10px;
-  fill: #d5d5d5;
-  border: none;
-  background-color: #f2f2f2;
+  right: 5px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 21px;
   height: 22px;
+  background-color: #f2f2f2;
+  border: none;
+  transform: translateY(-50%);
+  outline: none;
 }
 
-.button-calendar:hover path{
+.button-calendar svg {
+  flex-shrink: 0;
+}
+
+.button-calendar:hover path,
+.button-calendar:focus path {
   fill: #000000;
-  border: none;
 }
 
 .button-calendar:active path{
   fill: #6da6e3;
-  border: none;
 }
 
 .button-search {

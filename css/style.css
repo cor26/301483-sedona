@@ -126,6 +126,7 @@ body {
   display: inline-block;
   min-width: 128px;
   color: #000000;
+  transition: all 0.3s;
 }
 
 .navigation-item a:hover { /*наведение*/
@@ -780,11 +781,16 @@ body {
   font-weight: normal;
 }
 
+.filter-feature-input:hover + label,
+.filter-feature-input:focus + label {
+  outline: auto;
+}
+
 .filter-feature-input + label::before {
   content: "";
   position: absolute;
   left: -40px;
-  top: 10;
+  top: 10px;
   width: 27px;
   height: 23px;
   background-image: url("../img/svg/checkbox-off.svg");
@@ -792,30 +798,17 @@ body {
   background-position: 0 0;
 }
 
-.filter-feature-input:checked + label::after {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 10;
-  width: 27px;
-  height: 23px;
+.filter-feature-input:checked + label::before {
   background-image: url("../img/svg/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.filter-feature-input:disabled + label::after {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 10;
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/svg/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.filter-feature-input:disabled + label::before {
+  background-image: url("../img/svg/checkbox-off-disabled.svg");
 }
 
+.filter-feature-input:checked:disabled + label::before {
+  background-image: url("../img/svg/checkbox-on-disabled.svg");
+}
 
 .filter-range {
   margin: 0 0 0 auto;
@@ -940,6 +933,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .btn-transparent:hover {

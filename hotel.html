@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="container container-1">
+    <div class="container-1">
+    <div class="container">
     <header class="header-page">
       <nav class="main-navigation">
         <ul class="navigation-list">
@@ -36,41 +37,60 @@
             <li class="filter-list">
               <h3 class="filter-title">Инфраструктура:</h3>
               <p class="filter-feature">
-                <input type="checkbox" name="infrastructure" id="infrastructure" checked>
+                <input class="visually-hidden filter-feature-input" type="checkbox" name="infrastructure" id="infrastructure" checked>
                 <label for="infrastructure">Бассейн</label>
               </p>
               <p class="filter-feature">
-                <input type="checkbox" name="parking" id="parking">
+                <input class="visually-hidden filter-feature-input" type="checkbox" name="parking" id="parking">
                 <label for="parking">Парковка</label>
               </p>
-              <p class="filter-feature-wi-fi">
-                <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
+              <p class="filter-feature filter-feature-wi-fi">
+                <input class="visually-hidden filter-feature-input" type="checkbox" name="Wi-Fi" id="Wi-Fi">
                 <label for="Wi-Fi">Wi-Fi</label>
               </p>
             </li>
             <li class="filter-list">
                 <h3 class="filter-title">Тип жилья:</h3>
                 <p class="filter-feature">
-                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <input class="visually-hidden filter-feature-input" type="checkbox" name="hotel" id="hotel" checked>
                   <label for="hotel">Гостиница</label>
                 </p>
                 <p class="filter-feature">
-                  <input type="checkbox" name="motel" id="motel" checked>
+                  <input class="visually-hidden filter-feature-input" type="checkbox" name="motel" id="motel" checked>
                   <label for="motel">Мотель</label>
                 </p>
-                <p class="filter-feature-appartament">
-                  <input type="checkbox" name="appartament" id="appartament" checked disabled>
+                <p class="filter-feature filter-feature-appartament">
+                  <input class="visually-hidden filter-feature-input" type="checkbox" name="appartament" id="appartament" checked disabled>
                   <label for="appartament">Аппартаменты</label>
                 </p>
             </li>
 
-            <li class="filter-list-price">
-              <p class="filter-price">
-                <label for="price"> Стоимость в сутки(Р):</label>
-                <input type="text" name="price" id="price">
-              </p>
-              <button class="show-button" type="submit">Показать</button>
+            <li class="filter-range">
+              <div class="filter-range-title">
+                <p class="filter-price">Стоимость в сутки (Р):</p>
+              </div>
+
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+
+              <button class="btn-transparent" type="submit">Показать</button>
             </li>
+
+
+
+
+
+
           </ul>
         </form>
 
@@ -187,6 +207,7 @@
           </a>
         </div>
       </footer>
-   </div>
+      </div>
+    </div>
   </body>
 </html>

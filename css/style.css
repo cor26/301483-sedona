@@ -41,9 +41,11 @@ body {
 }
 
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .container-1 {
@@ -51,6 +53,19 @@ body {
   margin: 0 auto;
   background-color: #f2f2f2;
 }
+
+/*.container::before {
+  content: "";
+  position: absolute;
+  width: 1280px;
+  height: 500px;
+  !*height: ????? НЕ понимаю, как делать высоту, через псевдоэлемент, ведь здесь необходим
+  абсолют, который ничего не знает о своём окружении, а соответственно не чувствует высоты.
+  Ещё не ясно, как вывести данный контейнер на задний фон...*!
+  background-color: red;
+  left: -40px;
+  z-index: 0;
+}*/
 
 .header-page {
   position: relative;
@@ -650,7 +665,6 @@ body {
   margin: 0;
   padding: 22px 100px 25px 130px;
   background-color: rgba(255, 255, 255, 0.9);
-
 }
 
 .hashtag {
@@ -743,7 +757,12 @@ body {
 }
 
 .filter-title {
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0;
+}
+
+.filter-feature {
+  margin-bottom: 20px;
+  padding-left: 40px;
 }
 
 .filter-feature-wi-fi {
@@ -756,25 +775,177 @@ body {
   font-weight: normal;
 }
 
-.filter-feature {
-  margin-bottom: 25px;
-}
-
 .filter-feature label {
+  position: relative;
   font-weight: normal;
 }
 
-.filter-list-price {
+.filter-feature-input + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 10;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-feature-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 10;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-feature-input:disabled + label::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 10;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.filter-range {
   margin: 0 0 0 auto;
-  width: 320px;
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .filter-price {
-  display: flex;
+  margin-top: 0;
 }
 
-.show-button {
-  width: 140px;
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 150px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .filter-hotels {

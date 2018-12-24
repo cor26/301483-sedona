@@ -48,25 +48,6 @@ body {
   z-index: 1;
 }
 
-.container-1 {
-  width: 1280px;
-  margin: 0 auto;
-  background-color: #f2f2f2;
-}
-
-/*.container::before {
-  content: "";
-  position: absolute;
-  width: 1280px;
-  height: 500px;
-  !*height: ????? НЕ понимаю, как делать высоту, через псевдоэлемент, ведь здесь необходим
-  абсолют, который ничего не знает о своём окружении, а соответственно не чувствует высоты.
-  Ещё не ясно, как вывести данный контейнер на задний фон...*!
-  background-color: red;
-  left: -40px;
-  z-index: 0;
-}*/
-
 .header-page {
   position: relative;
   padding: 15px 0 17px;
@@ -109,7 +90,8 @@ body {
 }
 
 .navigation-item {
-  margin-right: 112px;
+  margin-right: 112px;  
+  min-width: 128px;
 }
 
 .navigation-item:nth-child(3n) {
@@ -124,7 +106,6 @@ body {
 
 .navigation-item a {
   display: inline-block;
-  min-width: 128px;
   color: #000000;
   transition: all 0.3s;
 }
@@ -417,10 +398,9 @@ body {
   font-weight: 400;
 }
 
-
-
 .choose-hotel-date {
   display: block;
+  transition: all 0.3s;
   margin: 0 auto;
   padding: 30px;
   width: 568px;
@@ -455,6 +435,10 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.choose-hotel-input {
+	transition: 0.3s;
 }
 
 .choose-hotel-item {
@@ -515,6 +499,7 @@ body {
   width: 38px;
   border: none;
   color: #a7a7a7;
+  transition: 0.3s;
 }
 
 .grown-minus:hover line,
@@ -539,6 +524,7 @@ body {
   width: 38px;
   border: none;
   color: #a7a7a7;
+  transition: 0.3s;
 }
 
 .grown-plus:hover line,
@@ -553,6 +539,7 @@ body {
 .choose-hotel-item-children {
   display: flex;
   margin-left: auto;
+  transition: 0.3s;
 }
 
 .choose-hotel-item-children > .children {
@@ -565,6 +552,7 @@ body {
   width: 38px;
   border: none;
   color: #a7a7a7;
+  transition: 0.3s;
 }
 
 .children-minus:hover line,
@@ -575,6 +563,17 @@ body {
 .children-minus:active line{
   stroke: #90b1cf;
 }
+
+.children-form::-webkit-outer-spin-button,
+.grown-form::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.children-form,
+.grown-form {
+    -moz-appearance: textfield;
+}
+
 
 .choose-hotel-item .children-form {
   padding: 12px 0 12px 0;
@@ -612,6 +611,7 @@ body {
   border: none;
   transform: translateY(-50%);
   outline: none;
+
 }
 
 .button-calendar svg {
@@ -621,6 +621,7 @@ body {
 .button-calendar:hover path,
 .button-calendar:focus path {
   fill: #000000;
+  transition: 0.3s;
 }
 
 .button-calendar:active path{
@@ -694,6 +695,7 @@ body {
   width:48px;
   height:48px;
   background-color: #81b3d2;
+  transition: 0.3s;
 }
 
 .social-button:hover {
@@ -725,11 +727,13 @@ body {
 }
 
 .academy-link {
-	padding-top: 25px;
+	padding-top: 25px;	
+	
 }
 
 .academy-link:hover path{
   fill: #6da6e3;
+  transition: 0.3s;
 }
 
 .academy-link:active path{
@@ -763,7 +767,6 @@ body {
 
 .filter-feature {
   margin-bottom: 20px;
-  padding-left: 40px;
 }
 
 .filter-feature-wi-fi {
@@ -779,6 +782,8 @@ body {
 .filter-feature label {
   position: relative;
   font-weight: normal;
+  padding-left: 40px;
+  cursor: pointer;
 }
 
 .filter-feature-input:hover + label,
@@ -789,8 +794,7 @@ body {
 .filter-feature-input + label::before {
   content: "";
   position: absolute;
-  left: -40px;
-  top: 10px;
+  left: 0;
   width: 27px;
   height: 23px;
   background-image: url("../img/svg/checkbox-off.svg");
@@ -835,8 +839,17 @@ body {
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
-  border-radius: 2px;
+  border-radius: 2px;  
 }
+
+.price-controls::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.price-controls  {
+  -moz-appearance: textfield;
+}
+
 
 .price-controls::after {
   content: "";
@@ -866,23 +879,19 @@ body {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -896,19 +905,20 @@ body {
 .range-toggle {
   position: absolute;
   top: -9px;
-
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+  width: 20px;
+  height: 23px;  
+  background-image: url("../img/svg/filter-button.svg");
+  background-size: 20px 23px;
+  background-repeat: no-repeat;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	top: -9px;
+	width: 22px;
+  height: 25px;  
+  background-image: url("../img/svg/filter-button.svg");
+  background-size: 22px 25px;
+  background-repeat: no-repeat;
 }
 
 .range-toggle-min {
@@ -923,12 +933,10 @@ body {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -938,7 +946,6 @@ body {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -1109,6 +1116,7 @@ body {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  transition: 0.3s;
 }
 
 .hotel-link:hover {
@@ -1127,6 +1135,7 @@ body {
   text-align: center;
   background-color: #81b3d2;
   color: #ffffff;
+  transition: 0.3s;
 }
 
 .hotel-information:hover {
@@ -1144,7 +1153,8 @@ body {
   text-align: center;
   width: 145px;
   background-color: #766357;
-  color: #ffffff;
+  color: #ffffff;  
+  transition: 0.3s;
 }
 
 .hotel-booking:hover {

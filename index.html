@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="container-1"> <!--Удалить если делать через псевдо-->
     <div class="container">
   	<header class="header-page">
   		<nav class="main-navigation">
@@ -121,7 +120,7 @@
                   </svg>
                 </button>
                   <label for="arrival-date"> Дата заезда:</label>
-                  <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+                  <input class="choose-hotel-input" id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
               </li>
        				<li class="choose-hotel-item">
                 <button class="button-calendar" type="button">
@@ -132,7 +131,7 @@
                   </svg>
                 </button>
                   <label for="departure-date"> Дата выезда:</label>
-                  <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+                  <input class="choose-hotel-input" id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
               </li>
               	<li class="choose-hotel-item">
                   <div class="choose-hotel-item-grown">
@@ -142,7 +141,7 @@
                         <line x1="0" y1="6" x2="12" y2="6" stroke="#a9a9a9" stroke-width="3"/>
                       </svg>
                     </button>
-                    <input class="grown-form" type="text" name="grown" id="grown" placeholder="2">
+                    <input class="grown-form" type="number" name="grown" id="grown" placeholder="2">
                     <button class="grown-plus" type="button">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11" width="12" height="12">
                         <line x1="0" y1="6" x2="12" y2="6" stroke="#a9a9a9" stroke-width="3"/>
@@ -157,7 +156,7 @@
                         <line x1="0" y1="6" x2="12" y2="6" stroke="#a9a9a9" stroke-width="3"/>
                       </svg>
                     </button>
-                    <input class="children-form" type="text" name="children" id="children" placeholder="0">
+                    <input class="children-form" type="number" name="children" id="children" placeholder="0">
                     <button class="children-plus" type="button">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11" width="12" height="12">
                         <line x1="0" y1="6" x2="12" y2="6" stroke="#a9a9a9" stroke-width="3"/>
@@ -215,7 +214,6 @@
           </a>
         </div>
    	</footer>
-    </div>
     </div>
   </body>
 </html>

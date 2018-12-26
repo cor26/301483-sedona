@@ -91,7 +91,7 @@ body {
 
 .navigation-item {
   margin-right: 112px;
-  min-width: 128px;
+  width: 128px;
 }
 
 .navigation-item:nth-child(3n) {
@@ -681,6 +681,7 @@ body {
 .map {
   height: 593px;
   margin-bottom: -120px;
+  font-size: 0;
 }
 
 .footer-page {
@@ -810,7 +811,7 @@ body {
   cursor: pointer;
 }
 
-.filter-feature-input:hover + label,
+
 .filter-feature-input:focus + label {
   outline: auto;
 }
@@ -1037,12 +1038,12 @@ body {
 .sorting-type {
   margin-right: 30px;
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-rating {
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-arrows-up {

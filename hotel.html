@@ -63,10 +63,7 @@
           </li>
 
           <li class="filter-range">
-            <div class="filter-range-title">
-              <p class="filter-price">Стоимость в сутки (Р):</p>
-            </div>
-
+            <p class="filter-price">Стоимость в сутки (Р):</p>
             <div class="price-controls">
               <label class="min-price">от <input type="number" name="min-price" value="0"></label>
               <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
@@ -93,19 +90,21 @@
       <a href="#" class="sorting sorting-price sorting-active">По цене</a>
       <a href="#" class="sorting sorting-type">По типу</a>
       <a href="#" class="sorting sorting-rating">По рейтингу</a>
-      <a href="#" class="sorting-arrows-up" title="Сортировка по возрастанию">
-        <span class="visually-hidden">Сортировка по возрастанию</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-          <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
-        </svg>
-      </a>
-      <a href="#" class="sorting-arrows-down sorting-active" title="Сортировка по убыванию">
+      <div class="sorting-arrows">
+        <a href="#" class="sorting-arrows-up" title="Сортировка по возрастанию">
+          <span class="visually-hidden">Сортировка по возрастанию</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+          </svg>
+        </a>
+        <a href="#" class="sorting-arrows-down sorting-active" title="Сортировка по убыванию">
         <span class="visually-hidden">Сортировка по убыванию</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
           <path fill="#cacaca" d="M5.5 10L0 0h11"/>
         </svg>
       </a>
-    </div>
+      </div>
+     </div>
 
     <section class="searching-results">
       <h2 class="visually-hidden">Результаты поиска</h2>

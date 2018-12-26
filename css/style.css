@@ -18,10 +18,10 @@ a {
 }
 
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
+  line-height: 21px;
+  font-weight: bold;
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -70,7 +70,7 @@ body {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff; /*стили навигации*/
+  background-color: #ffffff;
 }
 
 .main-header-logo {
@@ -110,11 +110,11 @@ body {
   transition: all 0.3s;
 }
 
-.navigation-item a:hover { /*наведение*/
+.navigation-item a:hover {
   color: #81b3d2;
 }
 
-.navigation-item a:active { /*нажатие*/
+.navigation-item a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .navigation-active a:hover {
-  color: #766357; /*Очень смешно, но не могу понять что это за классы. Скорее всего ранее этот класс ьыл удален*/
+  color: #766357;
 }
 
 .intro-welcome-text {
@@ -211,7 +211,7 @@ body {
 
 .presence-advantage {
   margin: 0 auto;
-  padding: 0 0 85px;
+  padding: 160px 0 85px;
 }
 
 .presence-advantage-list {
@@ -231,7 +231,6 @@ body {
 .presence-advantage-title {
   position: relative;
   margin: 0 auto 20px auto;
-  padding-top: 160px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -381,7 +380,7 @@ body {
 
 .interested-text {
   margin: 0 auto 30px;
-  font-size: 21px;
+  font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-align: center;
@@ -425,14 +424,11 @@ body {
 }
 
 .choose-hotel-form {
-  position: absolute;
-  left: 50%;
-  top: 86px;
-  margin: 0;
-  padding: 55px 56px 58px 56px;
+  margin: 0 auto -381px auto;
+  padding: 55px 56px 58px;
   width: 568px;
   background-color: #ffffff;
-  transform: translateX(-50%);
+
 }
 
 .choose-hotel-list {
@@ -657,7 +653,8 @@ body {
   width: 458px;
   padding: 18px 0;
   font-size: 21px;
-  line-height: normal;
+  line-height: 26px;
+  font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -753,7 +750,6 @@ body {
 
 .academy-link {
   padding-top: 25px;
-
 }
 
 .academy-link:hover path {
@@ -767,8 +763,8 @@ body {
 
 /*      ВТОРОЙ ЛИСТ       */
 
-.filter {
 
+.filter {
   background-image: url("../img/hotels/background-photo.jpg");
   background-repeat: no-repeat;
   padding: 30px 70px 30px 70px;
@@ -811,7 +807,6 @@ body {
   cursor: pointer;
 }
 
-
 .filter-feature-input:focus + label {
   outline: auto;
 }
@@ -846,16 +841,12 @@ body {
   text-transform: uppercase;
 }
 
-.filter-range-title {
-  margin-top: 0;
-  margin-bottom: 9px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
-}
-
 .filter-price {
   margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .price-controls {
@@ -889,9 +880,10 @@ body {
 
 .price-controls label {
   display: inline-block;
+  padding-top: 5px;
   font-size: 14px;
-  line-height: 32px;
-  vertical-align: top;
+  line-height: 21px;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -923,7 +915,6 @@ body {
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
@@ -1010,7 +1001,6 @@ body {
 .sorting:focus {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
-
 }
 
 .sorting:active {
@@ -1020,6 +1010,9 @@ body {
 
 .sorting-result {
   margin-right: 35px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
   color: #000000;
   border-bottom: 1px dotted rgba(0, 0, 0, 0);
 }
@@ -1046,9 +1039,11 @@ body {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-arrows-up {
-  position: absolute;
-  right: 100px;
+.sorting-arrows {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 480px;
+  width: 50px;
 }
 
 .sorting-arrows-up:hover path {
@@ -1064,8 +1059,7 @@ body {
 }
 
 .sorting-arrows-down {
-  position: absolute;
-  right: 75px;
+  padding-left: 13px;
 }
 
 .sorting-arrows-down:hover path {
@@ -1097,6 +1091,7 @@ body {
   width: 100px;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -1106,6 +1101,7 @@ body {
   padding: 0;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -1165,6 +1161,9 @@ body {
   margin-right: 10px;
   padding: 3px 0;
   width: 110px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
   text-align: center;
   background-color: #81b3d2;
   color: #ffffff;

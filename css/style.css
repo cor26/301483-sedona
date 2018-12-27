@@ -615,7 +615,7 @@ body {
 
 .button-calendar {
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 50%;
   display: flex;
   align-items: center;
@@ -719,15 +719,15 @@ body {
 }
 
 .social-button:hover {
-  background-color: #6da6e3;
+  background-color: #799cbd;
 }
 
 .social-button:active {
-  background-color: #3b6db8;
+  background-color: #6c94ba;
 }
 
 .social-button:active path {
-  fill: #7699cd;
+  fill: #98b4cf;
 }
 
 .html-link {

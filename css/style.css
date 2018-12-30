@@ -207,8 +207,8 @@ body {
 }
 
 .advantage-real-photo {
-  background-size: cover;
   width: 800px;
+  background-size: cover;
   background: #b6b2a6 url("../img/index/real-photo.jpg") no-repeat;
 }
 
@@ -245,10 +245,11 @@ body {
   position: absolute;
   top: -100px;
   right: 110px;
-  background: url("../img/svg/icon-1.svg") no-repeat;
-  background-position: 0 0;
   width: 75px;
   height: 72px;
+  background: url("../img/svg/icon-1.svg") no-repeat;
+  background-position: 0 0;
+
 }
 
 .presence-advantage-eats::before {
@@ -256,10 +257,10 @@ body {
   position: absolute;
   bottom: 50px;
   right: 110px;
+  height: 70px;
+  width: 74px;
   background: url("../img/svg/icon-3.svg") no-repeat;
   background-position: 0 0;
-  width: 74px;
-  height: 70px;
 }
 
 .presence-advantage-souvenirs::before {
@@ -267,10 +268,10 @@ body {
   position: absolute;
   bottom: 50px;
   right: 110px;
+  height: 76px;
+  width: 64px;
   background: url("../img/svg/icon-2.svg") no-repeat;
   background-position: 0 0;
-  width: 64px;
-  height: 76px;
 }
 
 .presence-advantage-desc {
@@ -287,9 +288,9 @@ body {
 }
 
 .bridge-advantage-box {
+  width: 400px;
   margin: 0 auto;
   padding: 45px 45px 60px;
-  width: 400px;
   background-color: #81b3d2;
 }
 
@@ -771,8 +772,8 @@ body {
 
 
 .filter {
-  background: #434b4f url("../img/hotels/background-photo.jpg") no-repeat;
   padding: 30px 70px 30px 70px;
+  background: #434b4f url("../img/hotels/background-photo.jpg") no-repeat;
   color: #ffffff;
 }
 
@@ -860,7 +861,7 @@ body {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  min-height: 36px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -890,6 +891,7 @@ body {
 .price-controls label {
   display: inline-block;
   padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -898,8 +900,9 @@ body {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 150px;
   padding-left: 65px;
+  width: 150px;
+  word-break: break-all;
 }
 
 .price-controls input {
@@ -993,6 +996,8 @@ body {
 .result-title {
   margin: 0 60px 0 0;
   padding: 0;
+  width: 112px;
+  word-break: break-all;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -1019,6 +1024,8 @@ body {
 
 .sorting-result {
   margin-right: 35px;
+  width: 75px;
+  word-break: break-all;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -1033,17 +1040,24 @@ body {
 }
 
 .sorting.sorting-active {
+  width: 50px;
+  word-break: break-all;
   color: #90b1d0;
   border-bottom: 1px dotted rgba(0, 0, 0, 0);
 }
 
 .sorting-type {
   margin-right: 30px;
+  width: 50px;
+  word-break: break-all;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-rating {
+  margin-right: 30px;
+  width: 76px;
+  word-break: break-all;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
@@ -1051,7 +1065,7 @@ body {
 .sorting-arrows {
   display: flex;
   justify-content: flex-end;
-  margin-left: 480px;
+  margin-left: auto;
   width: 50px;
 }
 
@@ -1099,6 +1113,7 @@ body {
   padding: 0;
   width: 100px;
   height: 21px;
+  word-break: break-all;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -1110,6 +1125,8 @@ body {
   margin: 0;
   padding: 0;
   height: 21px;
+  width: 67px;
+  word-break: break-all;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -1167,12 +1184,17 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.hotel-options {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 .hotel-information {
   display: inline-block;
   margin-right: 10px;
   padding: 3px 0;
   width: 110px;
-  height: 27px;
+  word-break: break-all;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
@@ -1196,7 +1218,7 @@ body {
   padding: 3px 0;
   text-align: center;
   width: 145px;
-  height: 27px;
+  word-break: break-all;
   background-color: #766357;
   color: #ffffff;
   transition: 0.3s;
@@ -1213,7 +1235,7 @@ body {
 
 .hotel-rating {
   position: relative;
-  margin: 60px 0 0 auto;
+  margin: 60px 0 auto auto;
   padding: 3px 15px;
   font-size: 14px;
   line-height: 21px;
@@ -1227,10 +1249,11 @@ body {
   position: absolute;
   top: -65px;
   right: 0px;
+  height: 17px;
+  width: 90px;
   background-image: url("../img/svg/star.svg");
   background-repeat: repeat-x;
-  width: 90px;
-  height: 17px;
+
 }
 
 .stars-4::before {
@@ -1238,10 +1261,11 @@ body {
   position: absolute;
   top: -65px;
   right: 0px;
+  height: 17px;
+  width: 72px;
   background-image: url("../img/svg/star.svg");
   background-repeat: repeat-x;
-  width: 72px;
-  height: 17px;
+
 }
 
 .stars-3::before {
@@ -1249,10 +1273,10 @@ body {
   position: absolute;
   top: -65px;
   right: 0px;
+  height: 17px;
+  width: 55px;
   background-image: url("../img/svg/star.svg");
   background-repeat: repeat-x;
-  width: 55px;
-  height: 17px;
 }
 
 .stars-2::before {
@@ -1260,10 +1284,10 @@ body {
   position: absolute;
   top: -65px;
   right: 0px;
+  height: 17px;
+  width: 35px;
   background-image: url("../img/svg/star.svg");
   background-repeat: repeat-x;
-  width: 35px;
-  height: 17px;
 }
 
 .stars-1::before {
@@ -1271,8 +1295,8 @@ body {
   position: absolute;
   top: -65px;
   right: 0px;
+  height: 17px;
+  width: 19px;
   background-image: url("../img/svg/star.svg");
   background-repeat: repeat-x;
-  width: 19px;
-  height: 17px;
 }

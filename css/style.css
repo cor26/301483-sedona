@@ -1,10 +1,12 @@
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -35,6 +37,7 @@ body {
   padding: 0;
   border: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -45,6 +48,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -54,7 +58,11 @@ body {
 }
 
 .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   min-height: 506px;
@@ -78,12 +86,18 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0 72px;
@@ -112,6 +126,7 @@ body {
   width: 100px;
   color: #000000;
   word-break: break-all;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -174,6 +189,8 @@ body {
 }
 
 .advantage-real {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
@@ -226,7 +243,10 @@ body {
 }
 
 .presence-advantage-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
   padding-left: 0;
@@ -291,6 +311,8 @@ body {
 }
 
 .bridge-advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -346,7 +368,10 @@ body {
 }
 
 .advantage-beauty-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 48px 0 61px;
@@ -424,6 +449,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #766357;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -442,6 +468,7 @@ body {
   margin: 0 auto -396px auto;
   padding: 54px 56px 53px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.15);
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.15);
 }
 
@@ -452,26 +479,36 @@ body {
 }
 
 .choose-hotel-input {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .choose-hotel-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto 30px;
 }
 
 .choose-hotel-item-grown {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 230px;
 }
 
 .choose-hotel-item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   margin: auto 16px auto 0;
   width: 97px;
   padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   word-break: break-all;
   font-size: 14px;
@@ -501,6 +538,24 @@ body {
   background-color: #ffffff;
 }
 
+.choose-hotel-item input::-webkit-input-placeholder {
+  font: inherit;
+  color: inherit;
+  opacity: 1;
+}
+
+.choose-hotel-item input:-ms-input-placeholder {
+  font: inherit;
+  color: inherit;
+  opacity: 1;
+}
+
+.choose-hotel-item input::-ms-input-placeholder {
+  font: inherit;
+  color: inherit;
+  opacity: 1;
+}
+
 .choose-hotel-item input::placeholder {
   font: inherit;
   color: inherit;
@@ -514,6 +569,7 @@ body {
   color: #a7a7a7;
   border: none;
   background-color: transparent;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   outline: none;
   cursor: pointer;
@@ -545,6 +601,7 @@ body {
   color: #a7a7a7;
   border: none;
   background-color: transparent;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   outline: none;
   cursor: pointer;
@@ -560,8 +617,11 @@ body {
 }
 
 .choose-hotel-item-children {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -634,11 +694,18 @@ body {
   position: absolute;
   right: 0;
   top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: 32px;
   width: 32px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   border: none;
   background-color: transparent;
@@ -647,10 +714,12 @@ body {
 }
 
 .button-calendar svg {
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .button-calendar path {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -697,8 +766,13 @@ body {
 }
 
 .footer-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
   margin: 0;
@@ -711,7 +785,11 @@ body {
 }
 
 .hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0 0 0 2px;
@@ -723,7 +801,10 @@ body {
 }
 
 .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 4px;
   margin-bottom: -7px;
@@ -739,12 +820,19 @@ body {
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 45px;
   height: 48px;
   background-color: #81b3d2;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -761,8 +849,13 @@ body {
 }
 
 .html-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -784,6 +877,7 @@ body {
 
 .academy-link:hover path {
   fill: #6da6e3;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -801,6 +895,8 @@ body {
 }
 
 .filter-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -908,6 +1004,7 @@ body {
   height: calc(100% - 10px);
   width: 2px;
   background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -977,6 +1074,7 @@ body {
 }
 
 .range-toggle-min:hover {
+  -webkit-transform: translateX(-1px);
   transform: translateX(-1px);
 }
 
@@ -985,6 +1083,7 @@ body {
 }
 
 .range-toggle-max:hover {
+  -webkit-transform: translateX(-1px);
   transform: translateX(-1px);
 }
 
@@ -1000,6 +1099,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -1009,8 +1109,12 @@ body {
 }
 
 .filter-hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 23px 70px 21px 71px;
   background-color: #ffffff;
@@ -1086,7 +1190,11 @@ body {
 }
 
 .sorting-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   margin-left: auto;
   width: 50px;
@@ -1157,6 +1265,8 @@ body {
 }
 
 .hotel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 0;
@@ -1196,6 +1306,7 @@ body {
   font-size: 21px;
   line-height: 24px;
   color: #000000;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -1213,6 +1324,8 @@ body {
 }
 
 .hotel-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1228,6 +1341,7 @@ body {
   word-break: break-all;
   color: #ffffff;
   background-color: #81b3d2;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -1248,6 +1362,7 @@ body {
   word-break: break-all;
   color: #ffffff;
   background-color: #766357;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 

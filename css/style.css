@@ -54,6 +54,10 @@ body {
 
 .header-page {
   position: relative;
+  padding: 14px 0 16px;
+}
+
+.header-page-index {
   padding: 14px 0 18px;
 }
 
@@ -776,7 +780,7 @@ body {
   justify-content: space-between;
   position: relative;
   margin: 0;
-  padding: 33px 100px 37px 131px;
+  padding: 34px 100px 37px 131px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -888,7 +892,7 @@ body {
 /*      ВТОРОЙ ЛИСТ       */
 
 .filter {
-  padding: 26px 71px 33px 71px;
+  padding: 28px 72px 34px;
   color: #ffffff;
   background: #434b4f url("../img/hotels/background-photo.jpg") no-repeat;
   background-position: 0 -55px;
@@ -1116,7 +1120,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 23px 70px 21px 71px;
+  padding: 24px 72px 19px 72px;
   background-color: #ffffff;
 }
 

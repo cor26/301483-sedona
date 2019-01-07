@@ -50,7 +50,7 @@ body {
 
 .header-page {
   position: relative;
-  padding: 15px 0 17px;
+  padding: 14px 0 18px;
 }
 
 .promo {
@@ -58,13 +58,13 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 506px;
-  margin: 0;
+  margin: -2px 0 0;
   padding: 0;
   background: url("../img/svg/intro-mask.svg"), url("../img/index/main-photo.jpg");
   background-color: #8db1ce;
   background-repeat: no-repeat, no-repeat;
-  background-position: left calc(100% + 3px), 50% -58px;
-  background-size: 100% 60px, cover;
+  background-position: left calc(100% + 5px), 50% -55px;
+  background-size: 100% 59px, cover;
 }
 
 .main-navigation {
@@ -86,7 +86,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  padding: 0 73px;
+  padding: 0 72px;
   list-style: none;
 }
 
@@ -142,13 +142,13 @@ body {
 }
 
 .intro-welcome-text {
-  margin-top: -7px;
+  margin: 0;
 }
 
 .advantage-section {
   width: 500px;
   margin: 0 auto;
-  padding: 60px 0 50px;
+  padding: 62px 0 51px;
   text-align: center;
 }
 
@@ -180,7 +180,7 @@ body {
 
 .advantage-real-box {
   width: 400px;
-  padding: 50px 55px 60px;
+  padding: 48px 55px 60px;
   background-color: #81b3d2;
 }
 
@@ -222,7 +222,7 @@ body {
 
 .presence-advantage {
   margin: 0 auto;
-  padding: 162px 0 85px;
+  padding: 160px 0 85px;
 }
 
 .presence-advantage-list {
@@ -252,7 +252,7 @@ body {
   content: "";
   position: absolute;
   top: -100px;
-  right: 110px;
+  right: 108px;
   height: 72px;
   width: 75px;
   background: url("../img/svg/icon-1.svg") no-repeat;
@@ -262,8 +262,8 @@ body {
 .presence-advantage-eats::before {
   content: "";
   position: absolute;
-  bottom: 50px;
-  right: 110px;
+  bottom: 49px;
+  right: 107px;
   height: 70px;
   width: 74px;
   background: url("../img/svg/icon-3.svg") no-repeat;
@@ -273,8 +273,8 @@ body {
 .presence-advantage-souvenirs::before {
   content: "";
   position: absolute;
-  bottom: 50px;
-  right: 110px;
+  bottom: 47px;
+  right: 113px;
   height: 76px;
   width: 64px;
   background: url("../img/svg/icon-2.svg") no-repeat;
@@ -297,7 +297,7 @@ body {
 .bridge-advantage-box {
   width: 400px;
   margin: 0 auto;
-  padding: 45px 45px 62px;
+  padding: 47px 45px 62px;
   background-color: #81b3d2;
 }
 
@@ -440,7 +440,7 @@ body {
 .choose-hotel-form {
   width: 568px;
   margin: 0 auto -396px auto;
-  padding: 56px 57px 53px;
+  padding: 54px 56px 53px;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.15);
 }
@@ -469,7 +469,7 @@ body {
 .choose-hotel-item label {
   display: flex;
   flex-shrink: 0;
-  margin: auto 15px auto 0;
+  margin: auto 16px auto 0;
   width: 97px;
   padding: 0;
   align-items: center;
@@ -665,7 +665,7 @@ body {
 
 .button-search {
   width: 458px;
-  margin-top: 23px;
+  margin-top: 22px;
   padding: 18px 0;
   font-size: 21px;
   line-height: 26px;
@@ -702,19 +702,19 @@ body {
   justify-content: space-between;
   position: relative;
   margin: 0;
-  padding: 32px 100px 39px 132px;
+  padding: 33px 100px 37px 131px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-page.footer-page-index {
-  margin-top: -123px;
+  margin-top: -119px;
 }
 
 .hashtag {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 2px;
   width: 140px;
   word-break: break-all;
   font-size: 21px;
@@ -779,7 +779,7 @@ body {
 }
 
 .academy-link {
-  padding: 0;
+  padding: 7px 0 0;
 }
 
 .academy-link:hover path {
@@ -794,7 +794,7 @@ body {
 /*      ВТОРОЙ ЛИСТ       */
 
 .filter {
-  padding: 27px 71px 33px 71px;
+  padding: 26px 71px 33px 71px;
   color: #ffffff;
   background: #434b4f url("../img/hotels/background-photo.jpg") no-repeat;
   background-position: 0 -55px;
@@ -1012,7 +1012,7 @@ body {
   display: flex;
   position: relative;
   align-items: center;
-  padding: 22px 70px 22px 71px;
+  padding: 23px 70px 21px 71px;
   background-color: #ffffff;
 }
 

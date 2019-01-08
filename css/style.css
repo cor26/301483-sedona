@@ -379,7 +379,7 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 47px 0 61px;
+  padding: 47px 0 59px;
   list-style: none;
   background-color: #eeeeee;
 }
@@ -419,7 +419,7 @@ body {
 
 .interested-section {
   margin: 0 auto;
-  padding: 48px 0 0;
+  padding: 50px 0 0;
 }
 
 .interested-text {

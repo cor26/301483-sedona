@@ -162,6 +162,7 @@ body {
 
 .intro-welcome-text {
   margin: 0;
+  height: 506px;
 }
 
 .advantage-section {
@@ -182,7 +183,7 @@ body {
 }
 
 .advantage-section-desc {
-  width: 490px;
+  width: 491px;
   margin: auto;
   font-size: 14px;
   line-height: 26px;
@@ -237,8 +238,8 @@ body {
 
 .advantage-real-photo {
   width: 800px;
-  background-size: cover;
   background: #b6b2a6 url("../img/index/real-photo.jpg") no-repeat;
+  background-size: cover;
 }
 
 .presence-advantage {
@@ -1396,7 +1397,7 @@ body {
   position: absolute;
   top: -63px;
   right: 0;
-  height: 17px;
+  height: 18px;
   background-image: url("../img/svg/star.svg");
   background-repeat: space;
 }

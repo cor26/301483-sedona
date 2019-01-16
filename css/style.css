@@ -474,13 +474,39 @@ body {
   background-color: #503e33;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }}
+
 .choose-hotel-form {
+  display: none;
   width: 568px;
   margin: 0 auto -395px auto;
   padding: 56px 55px 54px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 20px rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 20px rgba(0, 1, 1, 0.15);
+}
+
+.choose-hotel-form-open {
+  display: block;
+  width: 568px;
+  margin: 0 auto -395px auto;
+  padding: 56px 55px 54px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 7px 20px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 20px rgba(0, 1, 1, 0.15);
+  animation: bounce 0.6s;
 }
 
 .choose-hotel-list {

@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -223,5 +223,28 @@
     </div>
   </footer>
 </div>
+
+<script>
+  var link = document.querySelector(".choose-hotel-date");
+  var popup = document.querySelector(".choose-hotel-form");
+
+  var arrival = document.querySelector("[name=arrival-date]")
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.toggle("choose-hotel-form-open");
+    arrival.focus();
+  })
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("choose-hotel-form-open")) {
+        popup.classList.remove("choose-hotel-form-open");
+      }
+    }
+  });
+</script>
+
 </body>
 </html>

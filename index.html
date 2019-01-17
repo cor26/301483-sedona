@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
 <div class="container">
@@ -173,6 +173,7 @@
     </section>
 
     <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52178.29621886809!2d-111.64177674455422!3d35.177975438663054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1547717544710" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
       <img class="map-photo" src="img/index/map.jpg" width="1200" height="593" alt="Адрес: г. Седона, штат Аризона, США">
     </div>
   </main>
@@ -228,13 +229,17 @@
   var link = document.querySelector(".choose-hotel-date");
   var popup = document.querySelector(".choose-hotel-form");
 
-  var arrival = document.querySelector("[name=arrival-date]")
+  var form = popup.querySelector("form");
+  var arrival = document.querySelector("[name=arrival-date]");
+  var departure = document.querySelector("[name=departure-date]");
+  var grown = document.querySelector("[name=grown]");
+  var children = document.querySelector("[name=children]");
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("choose-hotel-form-open");
     arrival.focus();
-  })
+  });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -242,6 +247,13 @@
       if (popup.classList.contains("choose-hotel-form-open")) {
         popup.classList.remove("choose-hotel-form-open");
       }
+    }
+  }); 
+
+  window.addEventListener("submit", function (evt) {
+    if (!arrival.value || !departure.value || !grown.value || !children.value) {
+      evt.preventDefault();
+      console.log("Необходимо заполнить все поля ввода данных");
     }
   });
 </script>

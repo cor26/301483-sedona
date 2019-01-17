@@ -92,7 +92,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .navigation-list {
@@ -128,8 +128,9 @@ body {
 
 .navigation-item a {
   display: inline-block;
+  vertical-align: top;
   width: 100px;
-  color: #000000;
+  color: #000000;;
   word-break: break-all;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -480,38 +481,40 @@ body {
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   70% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
   90% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }}
+    transform: translateY(0);
+  }
+}
 
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   70% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
   90% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }}
+    transform: translateY(0);
+  }
+}
 
 .choose-hotel-form {
   display: none;
@@ -532,7 +535,7 @@ body {
   -webkit-box-shadow: 0 7px 20px rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 20px rgba(0, 1, 1, 0.15);
   -webkit-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .choose-hotel-list {
@@ -775,7 +778,7 @@ body {
   width: 32px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
   border: none;
   background-color: transparent;
   outline: none;
@@ -1078,11 +1081,12 @@ body {
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   padding-top: 4px;
   padding-bottom: 5px;
   font-size: 14px;
@@ -1152,7 +1156,7 @@ body {
 .range-toggle-min:hover {
   -webkit-transform: translateX(-1px);
   -ms-transform: translateX(-1px);
-      transform: translateX(-1px);
+  transform: translateX(-1px);
 }
 
 .range-toggle-max {
@@ -1162,7 +1166,7 @@ body {
 .range-toggle-max:hover {
   -webkit-transform: translateX(-1px);
   -ms-transform: translateX(-1px);
-      transform: translateX(-1px);
+  transform: translateX(-1px);
 }
 
 .btn-transparent {
@@ -1325,6 +1329,7 @@ body {
 
 .hotel-type {
   display: inline-block;
+  vertical-align: top;
   margin: 0 13px 0 0;
   padding: 0;
   height: 21px;
@@ -1338,6 +1343,7 @@ body {
 
 .hotel-value {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
   height: 21px;
@@ -1418,6 +1424,7 @@ body {
 
 .hotel-information {
   display: inline-block;
+  vertical-align: top;
   width: 110px;
   margin: 1px 6px 1px 0;
   padding: 3px 0 3px 0;
@@ -1444,6 +1451,7 @@ body {
 
 .hotel-booking {
   display: inline-block;
+  vertical-align: top;
   margin: 1px 0px 1px 0;
   padding: 3px 0 1px 0;
   width: 142px;
